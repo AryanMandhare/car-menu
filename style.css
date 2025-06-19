@@ -1,0 +1,70 @@
+*{
+    padding:0;
+    margin:0;
+
+}
+
+body{
+    height:100%;
+    width:100%;
+    background-color:rgb(52, 49, 63);
+}
+.main-heading{
+    text-align: center;
+    font-weight: 200;
+    font-size:55px;
+    letter-spacing:5px;
+    color:transparent; /* Make text transparent */
+  background: linear-gradient(to right,red,white); /* Define your gradient */
+  background-clip: text; /* Clip the background to the text */
+  -webkit-text-fill-color:inherit;
+}
+.cards-container{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+ height:350px;
+ width:300px;
+ margin:20px;
+ background-color: white;
+ border-radius:12px;
+  overflow: hidden;
+  box-shadow:10px 20px 50px #161616;
+}
+
+.image-container{
+    height:45%;
+    width:100%;
+    background-color:red;
+    transition: width 0.5s ease, height 0.5s ease;
+    overflow:hidden ;
+    
+}
+
+.image-container img:hover{
+     transform: scale(1.5);
+}
+.image-container img{
+    height:100%;
+    width:100%;
+    object-fit:cover;
+    transition:all 1s linear;
+   
+    
+}
+
+.car-info h3{
+    font-size:25px;
+    padding-left:5px;
+}
+.car-info p{
+    padding-top:1px;
+    padding-left:5px;
+    font-size:16px;
+    color:rgb(51, 50, 50);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:500;
+}
